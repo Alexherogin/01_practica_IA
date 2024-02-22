@@ -1,1 +1,56 @@
+                    #practica variable
+def string():
+    mensaje = ('\t\t***Bienvenido al curso de python***'.title())
+    num_1,num_2 = 10, 20
+    rest = num_1 + num_2
+    print (mensaje,'\n\t\t***Practicas variables***')
+    print ('variable 1 : \n',num_1,'\nvariable 2: \n',num_2)
+    print ('Suma de las 2 variables es : ',rest)
 
+                    #***preacticas string***
+                    
+                                                #{prctica string (utilizando comillas dobles y comillas simples )
+                                                #practica String,Concatenar(utilizando la variable msn y msn_1)
+    msn= ("Hola doble comillas , ".upper())     #upper(variable msn el mensaje se imprimira en mayusculas siempre )
+    msn_1=('\tHola comillas simples '.lower())  #lower (la varianle msn_1 se imprimira siempre en minusculas) )}
+    Hola = msn + msn_1
+    print(f'\n\t\t***Practicas tipo string***\n {Hola}')
+
+                     #***practica de tabulador y salto de linea***
+    lenguages = ('\n-Python.\n-Java.\n-Java Script.\n-PHP.\n-TypeScipt.\n-SQL\n-Cabol\n-C++.\n-C#.')
+    print('\n\t***practica de salto de linea***\n\nlenjuages de programacion :')
+    print('\t\t',lenguages)                    
+
+                     #***practica operadores***
+
+    suma = 44 +20 +23 #operador de suma para dar 87 de resultado 
+    resta = 20 +23 - 130 #operador de resta con resultado-87
+    multi= 10*suma # operador de multiplicacion con resultado 870
+    divicion = (5000/230)-11 # operador divicion con resultado de 10.71
+    expon = 2*2*2*2*2*2*2*2*2*2 
+    print ('\n\t\t***practica de sumas, restas, multiplicacion y divicion***')
+    print (f'\n La suma de 44 + 20 + 23 es :{suma}\n La resta de 23 + 20+ 120 es :{resta }\n La multiplicacion de(20+23+44*10)es:{multi}\nEl resultado de dividir 5000 / 230 - 11 es:{divicion}')
+    print ('\n\tpractica de exponentes ')
+    print (f' El resultado de 2 al exponente 10 es :{expon}')
+
+            # ***practica metodo round***
+
+    redondeo = 17.567383292929200034
+    print('\t***practica de redondeo de decimales*** ')
+    print ('el redondeo a 5 decimales de 17.567383292929200034 es:')
+    print(round(redondeo,5))
+
+        #main del programa
+Exit= False
+while not Exit:    
+    print('\nmenu: \n1.-temas del 2-9 \n2.-temas listas : \n3.-salir')
+    menu = int(input('seccione una opcion :'))
+    if menu == 1:
+        print('\n\ttemas string y operadores\n')
+        string ()
+    elif menu == 2:
+        print('\n***temas listas *** \n')
+        listas()
+    elif  menu == 3:
+        print ('gracias por utilisar este programa')
+        Exit= True
