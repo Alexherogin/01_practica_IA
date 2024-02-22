@@ -54,6 +54,11 @@ def listas():
                'lila','negro','rosa','blanco','naranja',]
     color_Add=['rojo','azul','verde','amarillo','marron',
                'lila','negro','rosa','blanco','naranja',]
+    color=['rojo','azul','verde','amarillo','marron'
+           ,'lila','negro','rosa','blanco','naranja',]
+    color_a_Z=['rojo','azul','verde','amarillo','marrom'
+               ,'lila','rosa','blanco','naranja']
+    
     print(f'Ejercicio 1 y 2: \nla pocicion 3 {colores[3]}')
     print(f'la pocicion 0 {colores[0]}')
     print(f'la pocicion 7 {colores[7]}')
@@ -87,6 +92,16 @@ def listas():
     color_Add.append('fuxia')
     color_Add.append('celeste')
     print(f'NUEVA LISTA CON METODO APPEND\n{color_Add}')
+    print(f'\n\t\t***metodo insert*** ')
+    print(f'Lista de colores antes del metodo insert\n{color}')
+    color.insert(-1,'turquesa')
+    color.insert(-4,'mangenta')
+    print(f'\n\t\tlista despues del metodo insert\n{color}')
+    print('\t\t***metodo sort y sorted***\n')
+    print(f'Lista de colores anres de los metodos sported\n{color_a_Z}')
+    color_a_Z.sort(reverse=True)
+    print(color_a_Z)
+
 
 
         #main del programa
