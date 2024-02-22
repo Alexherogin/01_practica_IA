@@ -40,6 +40,55 @@ def string():
     print ('el redondeo a 5 decimales de 17.567383292929200034 es:')
     print(round(redondeo,5))
 
+        #***PRACTICAS LISTAS***
+def listas():
+    
+    colores =[f'rojo','azul','verde','amarillo'
+              ,'marron','lila','negro','rosa']
+    Lnum =['tres','dos','cinco','cuatro','uno']
+    color_neg=['rojo','azul','verde','amarillo','morron',
+               'lila','negro','rosa','blanco','naranja']
+    color_neg_1=['rojo','azul','verde','amarillo','morron',
+                 'lila','negro','rosa','blanco','naranja']
+    color_Eli=['rojo','azul','verde','amarillo','marron',
+               'lila','negro','rosa','blanco','naranja',]
+    color_Add=['rojo','azul','verde','amarillo','marron',
+               'lila','negro','rosa','blanco','naranja',]
+    print(f'Ejercicio 1 y 2: \nla pocicion 3 {colores[3]}')
+    print(f'la pocicion 0 {colores[0]}')
+    print(f'la pocicion 7 {colores[7]}')
+    print('Ejercicio 3:\n ',Lnum)
+    print(f'Ejercicio 4 \n\n\tlista de colores - \n',color_neg)
+                            #***tema listas posiciones negativas***
+    print(f'\n\tcolores que se retiran de la lista :\n{color_neg[-1]}',',',f'{color_neg[-7]},',
+          f',{color_neg[-5]},',f',{color_neg[-2]},',f',{color_neg[-10]}')
+                            #***tema listas metodo del***
+    print(f'\n\tlista de colores metodo del:\n{color_Eli}\n')
+    del color_Eli[1]
+    del color_Eli[3]
+    del color_Eli[4]
+    del color_Eli[-3]   
+    print(f'\t\tcolores que quedaron despues del metodo del :\n{color_Eli} ')
+                    #***tema listas remove
+    print('\n\t\t***Metodo remove*** ')
+    print(f'\t\tcolores de la lista antes del metodo remove:\n{color_neg}\n')
+    color_neg.remove ('amarillo')
+    color_neg.remove ('rojo')
+    print(f'\t\tcolores despues del metodo remove\n{color_neg}')
+                    #***tema listas metodo pop
+    print('\n\t\t***Metodo pop*** ')
+    print(f'\tcolores de la lista antes del metodo pop:\n{color_neg}\n')
+    color_neg_1.pop(0)
+    color_neg_1.pop(-1)
+    colorv = color_neg_1.pop(0),color_neg_1.pop(-1)
+    print(f'\tcolores almasenados de la lista son :\n{colorv}')
+                    #***tema listaas metodo append
+    print(f'\n\t\tLISTA DE COLORES  ANTES DEL METODO APPEND :\n')
+    color_Add.append('fuxia')
+    color_Add.append('celeste')
+    print(f'NUEVA LISTA CON METODO APPEND\n{color_Add}')
+
+
         #main del programa
 Exit= False
 while not Exit:    
