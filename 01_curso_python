@@ -102,19 +102,44 @@ def listas():
     color_a_Z.sort(reverse=True)
     print(color_a_Z)
 
+def tuplas ():
+    Tcolor= ('rojo','azul','verde','amarillo'
+             ,'marron','lila','negro','rosa','blanco','naranja')
+    Tnumeros = (10,1,5,11)
+    Tresu= Tnumeros[0]+Tnumeros[2]+Tnumeros[3]-Tnumeros[1]
+    Lcolors=['rojo','azul','verde','amarillo'
+             ,'marron','lila','negro','rosa','blanco','naranja']
+                        #***practica tuplas con numerso y palabras
+    print('\n\t\t\t***practicas de Tuplas***')
+    print(f'\n\t\tTupla de colores para ejecicio es :\n{Tcolor}')
+    print(f'El color de la segunda pocicion de la tupla es:\n{Tcolor[1]}')
+    print(f'Los valores de la tupla para que hacer la opreacion con resultado 25 es:\n{Tnumeros}={Tresu} ')
+                        #***practica de cambio de tipo lista a tuplas***
+    print(f'Antes del cambio de tipo \n{Lcolors}:\t[{type(Lcolors)}]')
+    T_color = tuple(Lcolors)
+    print(f'Ddespues del cambio de listas\n{T_color}:\t{type(T_color)} ')
+    
+
+
+
+
 
 
         #main del programa
 Exit= False
 while not Exit:    
-    print('\nmenu: \n1.-temas del 2-9 \n2.-temas listas : \n3.-salir')
+    print('\nmenu: \n1.-temas del 2-9 \n2.-temas listas : \n3.-Temas Tuplas:\n4.-salida')
     menu = int(input('seccione una opcion :'))
     if menu == 1:
-        print('\n\ttemas string y operadores\n')
+        print('\n\t***temas string y operadores**\n')
         string ()
     elif menu == 2:
-        print('\n***temas listas *** \n')
+        print('\n\t***temas listas *** \n')
         listas()
-    elif  menu == 3:
+    elif menu ==3:
+        print('\n\t***Tema tuplas**')
+        tuplas()
+    elif  menu == 4:
+        
         print ('gracias por utilisar este programa')
         Exit= True
