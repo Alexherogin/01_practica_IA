@@ -118,7 +118,58 @@ def tuplas ():
     print(f'Antes del cambio de tipo \n{Lcolors}:\t[{type(Lcolors)}]')
     T_color = tuple(Lcolors)
     print(f'Ddespues del cambio de listas\n{T_color}:\t{type(T_color)} ')
-    
+
+
+                    #**** Tema condicionales ****
+def condicionales():
+    Num_A,Num_B,Num_c,Num_D=15,20,1450,60
+    print('\n\t\t\t***Practica de condicional if')
+    if Num_A<Num_B:
+        print('SI 15 < 20 Se ejecuto el el bloque if')
+    if Num_c>Num_D:
+        print('Si 1450 > 60 Se ejecuto el el bloque if')
+    if Num_D!=Num_D:
+        print('Si 60 = a 60 Se ejecuto el el bloque if')
+
+                            #***Practica if else***
+                            #se acomodo el codigo de manera correcta 
+    I_color = ('rojo')
+    if I_color == ('rojo'):
+        print('el color es rojo')
+    else :
+        print('el color no es rojo')
+
+                #***Tema if elif 
+        #se agrego 2 nuevas condiciones al codigo del ejercicio 
+    print('\n\t\tpractica entrada de edad con rangos \n')
+    edad = int(input('¿cuale es tu Edad? '))
+    if edad <= 0:
+        print('Nadien puede tener esa edad.')
+    elif edad >=1 and edad<=18:
+        print('Eres menor de Edad.')
+    elif edad >=18 and edad<= 45:
+        print('Eres un adulto independentie con muchas nesecidad ')
+    elif edad >=45 and edad<= 100 :
+        print('Eres un adulto de la 3 Edad ')
+    elif edad <=100 and edad<= 120 :
+        print('SOBREPASAS EL ESTATUS!!!')  
+    else :
+        print('EDAD NO VALIDA')
+    #             ****Tema buscar datos en tuplas y listas
+
+    Enter = input('\n\t\tIngrese un color :\n')
+    colors = 'rojo','verde','blanco','rosa'
+    if Enter in colors[0]:
+        print('el color rojo si esta en la lista ')
+    elif  Enter in colors[1]:
+        print('el color verde esta permitido ')
+    elif  Enter in colors[2]:
+        print('El color blanco esta en la lista ')
+    elif  Enter in colors[3]:
+        print('el color rosa esta en la lista ')
+    else: 
+        print(' ese color no esta en la lista  Intente con otro  ')
+
 
 
 
@@ -128,7 +179,7 @@ def tuplas ():
         #main del programa
 Exit= False
 while not Exit:    
-    print('\nmenu: \n1.-temas del 2-9 \n2.-temas listas : \n3.-Temas Tuplas:\n4.-salida')
+    print('\nmenu: \n1.-temas del 2-9 \n2.-temas listas : \n3.-Temas Tuplas:\n4.-Tema condicionales\n5.-salida')
     menu = int(input('seccione una opcion :'))
     if menu == 1:
         print('\n\t***temas string y operadores**\n')
@@ -139,7 +190,10 @@ while not Exit:
     elif menu ==3:
         print('\n\t***Tema tuplas**')
         tuplas()
-    elif  menu == 4:
+    elif menu ==4:
+        print('\n***Tema condicionales***\n')
+        condicionales()
+    elif  menu == 5:
         
         print ('gracias por utilisar este programa')
         Exit= True

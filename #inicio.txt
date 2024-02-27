@@ -1,0 +1,24 @@
+#inicio
+Total = float(input("ingrese el Total "))
+
+#descuentos 
+if Total <= 100: 
+   #descuento 10%
+   des10 ='10%'
+   descuento = Total * .10
+elif Total > 100:
+   #descuento 20%
+   des10 ='20%'
+   descuento = Total * .20
+   monto_des = Total -descuento
+
+   igv = monto_des * 0.19
+
+   total_pagar = monto_des + igv
+
+   print('='*30)
+   print('----factura consumo----')
+   print('descuentoque se aplica ', des10)
+    print('='*30)
+   print(Total)
+   print('monto de descu')
