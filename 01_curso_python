@@ -170,16 +170,51 @@ def condicionales():
     else: 
         print(' ese color no esta en la lista  Intente con otro  ')
 
+                # practicas bucles
+                    #**** practicas de while incremento y decremento  de
+def bucles(): 
+    print('practica while incremento de 5 a 5') 
+    num = 5
+    while num < 20:
+        print(num)
+        num+=5 
+    print('practica decrimento de 100 a 20 ')    
+    num_1 = 0
+    while num_1> -101:
+        print(num_1)
+        num_1-=20
+    print('practica while de 10 a 0 ')
+    num_0 = 10
+    while num_0 > -1:
+        print(f'el valor es {num_0}')
+        num_0 -=1
+    print('practica de incremento 1 a 30 con break\n')
+    x=0
+    while x<=30:
+        x+=1
+        if x==4 or x== 6 or x==10:
+             print(f'SE SALTA ESTOS NUMEROS: {x}')
+             continue
+        if x ==15:
+              print(f'el bucle se acaba en el {x}')
+              break
+        print(x)
 
-
-
-
-
+        #**** practica bucle FOR****
+    colores = 'rojo','azul','verde','amarillo'
+    print('\n\t\tPractica de bucle for \n')
+    for x in colores:
+        print(f'EL color es {x}') 
+    
+    print('\n\t\tpractica incremento con bucle for')
+    for nu in range(7,800,100):
+        print(f'los nimeror de incremento son: \n')
+        print(nu)
 
         #main del programa
 Exit= False
 while not Exit:    
-    print('\nmenu: \n1.-temas del 2-9 \n2.-temas listas : \n3.-Temas Tuplas:\n4.-Tema condicionales\n5.-salida')
+    print('\nmenu: \n1.-temas del 2-9 \n2.-temas listas : \n3.-Temas Tuplas:\n4.-Tema condicionales\n5.-Temas Bucles\n7.-salida')
     menu = int(input('seccione una opcion :'))
     if menu == 1:
         print('\n\t***temas string y operadores**\n')
@@ -193,7 +228,11 @@ while not Exit:
     elif menu ==4:
         print('\n***Tema condicionales***\n')
         condicionales()
-    elif  menu == 5:
+    elif menu ==5:
+        print('\n***Tema condicionales***\n')
+        bucles()
+
+    elif  menu == 7:
         
         print ('gracias por utilisar este programa')
         Exit= True
