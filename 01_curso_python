@@ -233,22 +233,40 @@ def diccionario ():
                  ,'precio':'$89.99'}
     for x in teclado_1:
         print(f'{x} = {teclado_1[x]}.\n')
-    # tema metodos  en diccionarios 
+    #              tema metodos  en diccionarios 
     print('\t\t***Ejercicio Eliminacion de elementos de un diccionario***\n')
     del teclado_1
     del teclado_2['categoria']
     del teclado_2['precio']
     print(teclado_2)
+    #///////////////////////////////////////////////////////////////////////////////////////
+    ### Temas funciones
 def funcion():
+
     print('\n\t\t**** temas funciones****')
+                # Ejercicio de suma con metodos y activar la funcion 3 veses 
     def suma(numero_1, numero_2):
-        print(f'\n\t\t***Ejercicio de suma con fuinciones***')
+        print(f'Resultado  de suma con fuinciones:')
         print(numero_1+numero_2)
     suma(15,15)
     suma(25,25)
     suma(56999,1)
-
-
+    #////////////////////////////////////////////////////////////
+        # Tema args 
+    
+    def colores (*args):
+        print('\n\t\t***Tema utilizacion del args en  funciones***\n')
+        print(f'El color {args[1]}, es mi favotito y el color {args[0]},tampoco esta mal ')
+    colores('rojo','naranja')
+    
+    def suma_0(*args):
+        res= args[0]+args[1]+args[2]+args[3]+args[4]
+        print(f'La suma de 5,15,25,50,80 es :{res}')
+    suma_0(5,15,25,50,80)
+    def color(**kwargs):
+        print('\n\t\t***Tema utilizacion del kwargs en  funciones***\n')
+        print(f'\neste es el color {kwargs['iro_1']} .')
+    color(iro_1='naranja',iro_2='rojo')
 
         #main del programa
 Exit= False
