@@ -265,8 +265,36 @@ def funcion():
     suma_0(5,15,25,50,80)
     def color(**kwargs):
         print('\n\t\t***Tema utilizacion del kwargs en  funciones***\n')
+        print('practica de kwargs\n')
         print(f'\neste es el color {kwargs['iro_1']} .')
     color(iro_1='naranja',iro_2='rojo')
+
+    # temas de clases 
+def clases ():
+    print('\n\t\t Ejecicios Para clases \n')
+    class User:
+        nombre =''
+        apellido=''
+        def imprime_datos(self):
+            print('nombre:',self.nombre,'\nApellido',self.apellido)
+        
+        #metodo Init 
+            #se puso en cometario el metodo para que no afectara
+            #al programa 
+        #def __init__(self,nombre,apellido):
+            #self.nombre=nombre
+            #self.apellido=apellido
+        
+          
+    User_001 = User ()
+    User_001.nombre = input('Agrege un nombre: ')
+    User_001.apellido=input('Agrege un apellido: ')
+    User_001.imprime_datos()
+               
+
+
+
+
 
         #main del programa
 Exit= False
@@ -294,6 +322,10 @@ while not Exit:
     elif menu ==7:
         print('\n***tema funciones')
         funcion()
+
+    elif menu ==8: 
+        print('\n****Tema clases**')
+        clases()
 
     elif  menu == 8:
         
